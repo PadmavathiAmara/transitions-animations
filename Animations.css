@@ -1,0 +1,112 @@
+body{
+  display: flex;
+  justify-content: space-evenly;   
+}
+.box1{
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes example{
+    from {
+        background-color: black;
+        color: red;
+    }
+    to{
+        background-color: red;
+        color: black;
+    }
+}
+.box2{
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes example2{
+ 0% {
+    background-color: black;
+ }
+ 25% {
+    background-color: blue;
+ }
+ 50% {
+    background-color: red;
+ }
+ 75% {
+    background-color: yellow;
+ }
+ 100% {
+    background-color: green;
+ }
+}
+.box3{
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: example3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes example3{
+    0% {
+        background-color: black;
+     }
+     25% {
+        background-color: blue;
+     }
+     50% {
+        background-color: red;
+     }
+     75% {
+        background-color: yellow;
+     }
+     100% {
+        background-color: green;
+     }
+}
+.box4{
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: example4 2s linear 5s infinite normal both;
+}
+@keyframes example4{
+    0% {
+        background-color: aqua;
+    }
+    25%{
+        background-color: blueviolet;
+    }
+    75%{
+        background-color: brown;
+    }
+    100%{
+        background-color: cornflowerblue;
+    }
+}
